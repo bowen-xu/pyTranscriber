@@ -42,7 +42,154 @@ class Ctr_Main():
     def __initGUI(self):
 
         #language selection list
-        list_languages =  [ "en-US - English (United States)", "en-AU - English (Australia)", "en-CA - English (Canada)", "en-GB - English (United Kingdom)", "en-IN - English (India)", "en-GB - English (Ireland)", "en-NZ - English (New Zealand)", "en-PH - English (Philippines)","en-SG - English (Singapore)", "af - Afrikaans", "ar - Arabic", "az - Azerbaijani", "be - Belarusian", "bg - Bulgarian", "bn - Bengali", "bs - Bosnian", "ca - Catalan", "ceb -Cebuano", "cs - Czech", "cy - Welsh", "da - Danish", "de - German", "el - Greek", "eo - Esperanto", "es-AR - Spanish (Argentina)", "es-CL - Spanish (Chile)", "es-ES - Spanish (Spain)", "es-US - Spanish (United States)", "es-MX - Spanish (Mexico)", "et - Estonian", "eu - Basque", "fa - Persian", "fi - Finnish", "fr - French", "ga - Irish", "gl - Galician", "gu -Gujarati", "ha - Hausa", "hi - Hindi", "hmn - Hmong", "hr - Croatian", "ht Haitian Creole", "hu - Hungarian", "hy - Armenian", "id - Indonesian", "ig - Igbo", "is - Icelandic", "it - Italian", "iw - Hebrew", "ja - Japanese", "jw - Javanese", "ka - Georgian", "kk - Kazakh", "km - Khmer", "kn - Kannada", "ko - Korean", "la - Latin", "lo - Lao", "lt - Lithuanian", "lv - Latvian", "mg - Malagasy", "mi - Maori", "mk - Macedonian", "ml - Malayalam", "mn - Mongolian", "mr - Marathi", "ms - Malay", "mt - Maltese", "my - Myanmar (Burmese)", "ne - Nepali", "nl - Dutch", "no - Norwegian", "ny - Chichewa", "pa - Punjabi", "pl - Polish", "pt-BR - Portuguese (Brazil)", "pt-PT - Portuguese (Portugal)", "ro - Romanian", "ru - Russian", "si - Sinhala", "sk - Slovak", "sl - Slovenian", "so - Somali", "sq - Albanian", "sr - Serbian", "st - Sesotho", "su - Sudanese", "sv - Swedish", "sw - Swahili", "ta - Tamil", "te - Telugu", "tg - Tajik", "th - Thai", "tl - Filipino", "tr - Turkish", "uk - Ukrainian", "ur - Urdu", "uz - Uzbek", "vi - Vietnamese", "yi - Yiddish", "yo - Yoruba", "yue-Hant-HK - Cantonese (Traditional, HK)", "zh - Chinese (Simplified, China)", "zh-HK - Chinese (Simplified, Hong Kong)", "zh-TW - Chinese (Traditional, Taiwan)", "zu - Zulu" ]
+        list_languages =  [ "en-US - English (United States)",
+                            "en-AU - English (Australia)",
+                            "en-CA - English (Canada)",
+                            "en-GB - English (United Kingdom)",
+                            "en-HK - English (Hong Kong)",
+                            "en-IN - English (India)",
+                            "en-GB - English (Ireland)",
+                            "en-NZ - English (New Zealand)",
+                            "en-PH - English (Philippines)",
+                            "en-SG - English (Singapore)",
+                            "af - Afrikaans",
+                            "ar - Arabic",
+                            'ar-DZ - Arabic (Algeria)',
+                            'ar-EG - Arabic (Egypt)',
+                            'ar-IQ - Arabic (Iraq)',
+                            'ar-IS - Arabic (Israel)',
+                            'ar-JO - Arabic (Jordan)',
+                            'ar-KW - Arabic (Kuwait)',
+                            'ar-LB - Arabic (Lebanon)',
+                            'ar-MA - Arabic (Morocco)',
+                            'ar-OM - Arabic (Oman)',
+                            'ar-QA - Arabic (Qatar)',
+                            'ar-SA - Arabic (Saudi Arabia)',
+                            'ar-PS - Arabic (State of Palestine)',
+                            'ar-TN - Arabic (Tunisia)',
+                            'ar-AE - Arabic (United Arab Emirates)',
+                            'ar-YE - Arabic (Yemen)',
+                            "az - Azerbaijani",
+                            "be - Belarusian",
+                            "bg - Bulgarian",
+                            "bn - Bengali",
+                            "bs - Bosnian",
+                            "ca - Catalan",
+                            "ceb -Cebuano",
+                            "cs - Czech",
+                            "cy - Welsh",
+                            "da - Danish",
+                            "de - German",
+                            'de-AT - German (Austria)',
+                            'de-CH - German (Switzerland)',
+                            "el - Greek",
+                            "eo - Esperanto",
+                            'es-ES - Spanish (Spain)',
+                            'es-AR - Spanish (Argentina)',
+                            'es-BO - Spanish (Bolivia)',
+                            'es-CL - Spanish (Chile)',
+                            'es-CO - Spanish (Colombia)',
+                            'es-CR - Spanish (Costa Rica)',
+                            'es-DO - Spanish (Dominican Republic)',
+                            'es-EC - Spanish (Ecuador)',
+                            'es-GT - Spanish (Guatemala)',
+                            'es-HN - Spanish (Honduras)',
+                            'es-MX - Spanish (Mexico)',
+                            'es-NI - Spanish (Nicaragua)',
+                            'es-PA - Spanish (Panama)',
+                            'es-PE - Spanish (Peru)',
+                            'es-PR - Spanish (Puerto Rico)',
+                            'es-PY - Spanish (Paraguay)',
+                            'es-SV - Spanish (El Salvador)',
+                            'es-UY - Spanish (Uruguay)',
+                            'es-US - Spanish (United States)',
+                            'es-VE - Spanish (Venezuela)',
+                            "et - Estonian",
+                            "eu - Basque",
+                            "fa - Persian",
+                            'fil-PH - Filipino (Philippines)',
+                            "fi - Finnish",
+                            "fr - French",
+                            'fr-BE - French (Belgium)',
+                            'fr-CA - French (Canada)',
+                            'fr-CH - French (Switzerland)',
+                            "ga - Irish",
+                            "gl - Galician",
+                            "gu -Gujarati",
+                            "ha - Hausa",
+                            "hi - Hindi",
+                            "hmn - Hmong",
+                            "hr - Croatian",
+                            "ht - Haitian Creole",
+                            "hu - Hungarian",
+                            "hy - Armenian",
+                            "id - Indonesian",
+                            "ig - Igbo",
+                            "is - Icelandic",
+                            "it - Italian",
+                            'it-CH - Italian (Switzerland)',
+                            "iw - Hebrew",
+                            "ja - Japanese",
+                            "jw - Javanese",
+                            "ka - Georgian",
+                            "kk - Kazakh",
+                            "km - Khmer",
+                            "kn - Kannada",
+                            "ko - Korean",
+                            "la - Latin",
+                            "lo - Lao",
+                            "lt - Lithuanian",
+                            "lv - Latvian",
+                            "mg - Malagasy",
+                            "mi - Maori",
+                            "mk - Macedonian",
+                            "ml - Malayalam",
+                            "mn - Mongolian",
+                            "mr - Marathi",
+                            "ms - Malay",
+                            "mt - Maltese",
+                            "my - Myanmar (Burmese)",
+                            "ne - Nepali",
+                            "nl - Dutch",
+                            "no - Norwegian",
+                            "ny - Chichewa",
+                            "pa - Punjabi",
+                            "pl - Polish",
+                            "pt-BR - Portuguese (Brazil)",
+                            "pt-PT - Portuguese (Portugal)",
+                            "ro - Romanian",
+                            "ru - Russian",
+                            "si - Sinhala",
+                            "sk - Slovak",
+                            "sl - Slovenian",
+                            "so - Somali",
+                            "sq - Albanian",
+                            "sr - Serbian",
+                            "st - Sesotho",
+                            "su - Sudanese",
+                            "sv - Swedish",
+                            "sw - Swahili",
+                            "ta - Tamil",
+                            'ta-IN - Tamil (India)',
+                            'ta-MY - Tamil (Malaysia)',
+                            'ta-SG - Tamil (Singapore)',
+                            'ta-LK - Tamil (Sri Lanka)',
+                            "te - Telugu",
+                            "tg - Tajik",
+                            "th - Thai",
+                            "tl - Filipino",
+                            "tr - Turkish",
+                            "uk - Ukrainian",
+                            "ur - Urdu",
+                            "uz - Uzbek",
+                            "vi - Vietnamese",
+                            "yi - Yiddish",
+                            "yo - Yoruba",
+                            "yue-Hant-HK - Cantonese (Traditional, HK)",
+                            "zh - Chinese (Simplified, China)",
+                            "zh-HK - Chinese (Simplified, Hong Kong)",
+                            "zh-TW - Chinese (Traditional, Taiwan)",
+                            "zu - Zulu" ]
 
         self.objGUI.cbSelectLang.addItems(list_languages)
         self.__listenerProgress("", 0)
@@ -65,6 +212,7 @@ class Ctr_Main():
         self.objGUI.bSelectMedia.clicked.connect(self.__listenerBSelectMedia)
 
         self.objGUI.actionLicense.triggered.connect(self.__listenerBLicense)
+        self.objGUI.actionDonation.triggered.connect(self.__listenerBDonation)
         self.objGUI.actionAbout_pyTranscriber.triggered.connect(self.__listenerBAboutpyTranscriber)
 
     def __resetGUIAfterSuccess(self):
@@ -136,7 +284,7 @@ class Ctr_Main():
 
     def __listenerBExec(self):
         if not MyUtil.is_internet_connected():
-            self.__showErrorMessage("Error! You need to have internet connection to use pyTranscriber!")
+            self.__showErrorMessage("Error! Cannot reach Google Speech Servers. \n\n1) Please make sure you are connected to the internet. \n2) If you are in China or other place that blocks access to Google servers: please install and enable a desktop-wide VPN app like Windscribe before trying to use pyTranscriber!")
         else:
             #extracts the two letter lang_code from the string on language selection
             selectedLanguage = self.objGUI.cbSelectLang.currentText()
@@ -227,14 +375,24 @@ class Ctr_Main():
                 + "along with this program.  If not, see <a href=\"https://www.gnu.org/licenses\">www.gnu.org/licenses</a>."
                 + "</body></html>", "License")
 
+    def __listenerBDonation(self):
+        self.__showInfoMessage("<html><body>"
+                + "pyTranscriber is developed as a hobby, so donations of any value are welcomed and essential for further improvements and fixes."
+                + "<br><br>If you feel that this software has been useful and would like to contribute for it to continue improve and have more features and fixes you can <a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YHB854YHPJCU8&item_name=Donation+pyTranscriber&currency_code=BRL\">DONATE VIA PAYPAL</a> or <a href=\"https://blockchain.com/btc/payment_request?address=153LcqV59paxEEJX7riLrEHQbE54vhcko9&amount=0.00026351&message=Donation to support pyTranscriber development\"> DONATE US$5 VIA BITCOIN</a>."
+                + "<br><br>Thanks in advance!"
+                + "</body></html>", "DONATIONS")
+
     def __listenerBAboutpyTranscriber(self):
         self.__showInfoMessage("<html><body>"
                 + "<a href=\"https://github.com/raryelcostasouza/pyTranscriber\">pyTranscriber</a> is an application that can be used "
                 + "to generate <b>automatic transcription / automatic subtitles </b>"
                 + "for audio/video files through a friendly graphical user interface. "
-                +"<br><br>"
+                + "<br><br>"
                 + "The hard work of speech recognition is made by the <a href=\"https://cloud.google.com/speech/\">Google Speech Recognition API</a> "
                 + "using <a href=\"https://github.com/agermanidis/autosub\">Autosub</a>"
+                + "<br><br>pyTranscriber is developed as a hobby, so donations of any value are welcomed and essential for further improvements and fixes."
+                + "<br><br>If you feel that this software has been useful and would like to contribute for it to continue improve and have more features and fixes you can <a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YHB854YHPJCU8&item_name=Donation+pyTranscriber&currency_code=BRL\">DONATE VIA PAYPAL</a> or <a href=\"https://blockchain.com/btc/payment_request?address=153LcqV59paxEEJX7riLrEHQbE54vhcko9&amount=0.00026351&message=Donation to support pyTranscriber development\"> DONATE US$5 VIA BITCOIN</a>."
+                + "<br><br>Thanks in advance!"
                 + "</body></html>", "About pyTranscriber")
 
 

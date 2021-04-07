@@ -5,6 +5,8 @@ pyTranscriber is an application that can be used to generate <b>automatic transc
 <br>
 ![pyTranscriber1](doc/screenshot3.png?raw=true "pyTranscriber")
 <br>
+[![Watch the video](doc/pyTranscriber.png)](https://youtu.be/DJFpklDnyA4)
+<br>
 <br>
 pyTranscriber is a improved version of my previous project <a href="https://github.com/raryelcostasouza/JAutosub">JAutosub (Java)</a>, created because of the limitations, issues, and overhead of mixing this 2 different languages on a single project.
 <br>
@@ -21,6 +23,14 @@ IMPORTANT: As speech recognition technology is still not fully accurate, the <b>
 <br>
 <br>
 <h1>Release Notes:</h1>
+<b>07/12/2020 - v1.5 </b>
+<br>* Since v1.4.1 COMPATIBLE WITH MACOS CATALINA.
+<br>* Upgraded to latest Python and libraries
+<br>* Minor GUI tweaks and fixes.
+<br><br>
+<b>06/12/2020 - v1.4.1:</b>
+<br>* Added support for MacOS Catalina!
+<br><br>
 <b>29/01/2020 - v1.4:</b>
 <br>* Fixed crash when exporting txt file for languages with special characters, specially chinese, on Windows system. Thanks for KY Poon for reporting!
 <br><br>
@@ -29,10 +39,17 @@ IMPORTANT: As speech recognition technology is still not fully accurate, the <b>
 <br>* Fixed bug with canceling during batch processing (only the current job was being stopped... not all of them as expected).
 <br><br>
 <h1>For Users - Download the Windows/Linux/MacOS portable app</h1>
-<a href="https://github.com/raryelcostasouza/pyTranscriber/releases/tag/v1.4-stable"> pyTranscriber-v1.4-stable</a>
+<a href="https://github.com/raryelcostasouza/pyTranscriber/releases/tag/v1.5-stable"> pyTranscriber-v1.5-stable</a>
+
+<h1> Donations to support the development </h1>
+pyTranscriber is developed as a hobby, so donations of any value are welcomed and essential for further improvements.
+<br>If you feel that this software has been useful and would like to contribute for it to continue improve and have more features and fixes you can <b><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YHB854YHPJCU8&item_name=Donation+pyTranscriber&currency_code=BRL">DONATE VIA PAYPAL</a></b> or <b><a href="https://blockchain.com/btc/payment_request?address=153LcqV59paxEEJX7riLrEHQbE54vhcko9&amount=0.00026351&message=Donation to support pyTranscriber development"> DONATE US$5 VIA BITCOIN</a></b>
+
+<br>Thanks in advance!
 
 <h1>For Developers - Technical Details</h1>
 Check at <a href="https://github.com/raryelcostasouza/pyTranscriber/blob/master/doc/technical_details.md">technical_details.md<a>
+
 
 ### License
 
